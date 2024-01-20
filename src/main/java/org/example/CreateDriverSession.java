@@ -21,6 +21,8 @@ public class CreateDriverSession {
 //        caps.setCapability("deviceName","pixel_3a");
         caps.setCapability("automationName","UiAutomator2");
         caps.setCapability("udid","emulator-5554");
+//        caps.setCapability("avd","Pixel3a");
+//        caps.setCapability("avdLaunchTimeout", 180000);
 //        caps.setCapability("appPackage","io.appium.android.apis");
 //        caps.setCapability("appActivity","io.appium.android.apis.ApiDemos");
         String appUrl = System.getProperty("user.dir") + File.separator + "src" + File.separator + "main" + File.separator +
