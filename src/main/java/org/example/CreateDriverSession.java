@@ -8,9 +8,9 @@ import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class StartDriver {
+public class CreateDriverSession {
 
-    public StartDriver() {
+    public CreateDriverSession() {
     }
 
     public static void main(String[] args) throws MalformedURLException {
@@ -18,7 +18,7 @@ public class StartDriver {
         //Setup DesiredCapabilities untuk konfigurasi perangkat dan aplikasi
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("platformName","Android");
-        caps.setCapability("deviceName","pixel_3a");
+//        caps.setCapability("deviceName","pixel_3a");
         caps.setCapability("automationName","UiAutomator2");
         caps.setCapability("udid","emulator-5554");
         String appUrl = System.getProperty("user.dir") + File.separator + "src" + File.separator + "main" + File.separator +
